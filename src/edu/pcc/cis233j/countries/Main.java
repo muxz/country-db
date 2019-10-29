@@ -10,12 +10,13 @@ public class Main {
 	public static void main(String[] args) {
 		CountryDB cdb = new CountryDB();
 		List<Country> countries = cdb.getCountries();
-		
-		Country firstCountry = countries.get(0);
-		System.out.println("First country:");
-    	System.out.println("Name: " + firstCountry.getName()
-				           + "  Population: " + firstCountry.getPopulation()
-				           + "  Median Age: " + firstCountry.getMedianAge()
-						   + "  Coastline: " + firstCountry.getCoastlineKm() + "km");
+
+		for (Country country : countries) {
+			System.out.println("Country:");
+			System.out.println("Name: " + country.getName()
+					+ "  Population: " + country.getPopulation()
+					+ "  Median Age: " + country.getMedianAge()
+					+ "  Coastline: " + country.getCoastlineKm() + "km");
+		}
 	}
 }
