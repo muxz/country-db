@@ -16,6 +16,7 @@ public class Main {
 			System.out.println("Name: " + country.getName()
 					+ "  Population: " + country.getPopulation()
 					+ "  Median Age: " + country.getMedianAge()
+                    + "  Language: " + country.getLanguage()
 					+ "  Coastline: " + country.getCoastlineKm() + "km");
 		}
 	}

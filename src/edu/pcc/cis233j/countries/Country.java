@@ -9,16 +9,18 @@ public class Country {
 	private String name;
 	private long population;
 	private double medianAge;
+	private String language;
 	private long coastlineKm;
 	
 	/**
 	 * Create a Country object with the given properties
 	 */
-	public Country(int id, String name, long population, double medianAge, long coastlineKm) {
+	public Country(int id, String name, long population, double medianAge, String language, long coastlineKm) {
 		this.id = id;
 		this.name = name;
 		this.population = population;
 		this.medianAge = medianAge;
+		this.language = language;
 		this.coastlineKm = coastlineKm;
 	}
 
@@ -38,7 +40,10 @@ public class Country {
 		return medianAge;
 	}
 
+	public String getLanguage() { return language; }
+
 	public long getCoastlineKm() {
 		return coastlineKm;
 	}
+
 }

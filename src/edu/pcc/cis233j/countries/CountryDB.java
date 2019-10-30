@@ -58,10 +58,12 @@ public class CountryDB {
 				ResultSet rs = stmt.executeQuery()
 				) {
 			while (rs.next()) {
+				int columnLabel = 0;
 				countries.add(new Country(rs.getInt("Id"),
 						rs.getString("Name"),
 						rs.getLong("Population"),
 						rs.getDouble("MedianAge"),
+						rs.getString("Language"),
 						rs.getLong("CoastlineKm")));
 			}
 		}
